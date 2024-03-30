@@ -3,10 +3,10 @@
 
 # ключ : значение
 
-dictionary = {
-  "cat": "кошка",
-  "bat": "летучая мышь"
-}
+# dictionary = {
+#   "cat": "кошка",
+#   "bat": "летучая мышь"
+# }
 
 # print(dictionary)
 # cat = dictionary["cat"]
@@ -18,7 +18,12 @@ countries = {
 }
 
 africa = countries["Африка"]
-print(africa)
+# print(africa)
 
-africa_key = "Африка"
-print(countries[africa_key])
+country_key = input("Введите название страны: ")
+if country_key == "Африка":
+  print("Страны Африки: ", countries[country_key])
+elif country_key == "Азия":
+  print("Страны Азии:", countries[country_key])
+else:
+  print("Такой страны нет в списке")
