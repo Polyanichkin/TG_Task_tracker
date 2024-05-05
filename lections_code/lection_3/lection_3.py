@@ -1,3 +1,5 @@
+import random
+
 HELP = """
 help - напечатать справку по программе.
 add - добавить задачу в список (название задачи запрашиваем у пользователя).
@@ -6,6 +8,7 @@ exit - завершить запись задач и выйти
 random - добавлять случайную задачу на дату Сегодня"""
 
 RANDOM_TASK = "Записаться на курс"
+RANDOM_TASKS = ["Записаться на курс", "Сходить в магазин", "Поиграть в хэллдайверс", "Помыть машину"]
 
 tasks = {
 
@@ -44,7 +47,8 @@ while run:
         print("Спасибо за пользование программой! До встречи! =)")
         break
     elif command == "random":
-        add_todo("Сегодня", RANDOM_TASK)
+        task = random.choice(RANDOM_TASKS)
+        add_todo("Сегодня", task)
     # elif command == "rando_date":
     #     add_todo(RANDOM_DATE, RANDOM_TASK)
     else:
