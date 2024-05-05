@@ -3,8 +3,7 @@ def count_letter(words, letter):
     for word in words:
         if letter in word:
             count += 1
-        print(count)
+    return count
 
 
-words_dic = ['python', 'c++', 'c', 'scala', 'java']
-count_letter(words=words_dic, letter='c')
+print(count_letter(['python', 'c++', 'c', 'scala', 'java'], 'c'))
