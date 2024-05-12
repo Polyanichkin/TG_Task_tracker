@@ -49,7 +49,7 @@ while run:
     elif command == "random":
         task = random.choice(RANDOM_TASKS)
         add_todo("Сегодня", task)
-    # elif command == "rando_date":
+    # elif command == "random":
     #     add_todo(RANDOM_DATE, RANDOM_TASK)
     else:
         print("Неизвестная команда")
